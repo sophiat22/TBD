@@ -1,0 +1,101 @@
+body{
+	background-color: #faf0e6;
+}
+
+@keyframes colorchange {
+	from{backgorund-color: #4D3024}
+	to{background-color:  #B58D6E}
+	from{color: #B58D6E}
+	to{color:  #4D3024}
+}
+
+@keyframes colorchangetwo{
+	from{backgorund-color: #B58D6E}
+	to{background-color:  #4D3024}
+	from{color: #4D3024}
+	to{color:  #B58D6E}
+}
+
+title{
+	color: #4D3024;
+	background-color: #9C6C4A;
+	font-family: "Playfair Display", serif;
+}
+
+h1{
+	color: #4D3024;
+	text-align: center;
+	background-color: #B58D6E;
+	font-family: "Playfair Display", serif;
+	animation-name: colorchangetwo;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+h2{
+	background-color: #B58D6E;
+	text-align: center;
+	color: #4D3024;
+	animation-name: colorchangetwo;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	font-family: "Playfair Display", serif;
+}
+
+h3{
+	background-color: #B58D6E;
+	text-align: center;
+	color: #4D3024;
+	animation-name: colorchange;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	font-family: "Playfair Display", serif;
+}
+
+h4{
+	color: #4D3024;
+	font-family: "Special Elite", display;
+}
+
+.typewriter p, li, a{
+  overflow: hidden;
+  border-right: .15em;
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+	from{width:  0}
+	to{width:  100%}
+}
+
+@keyframes blink-caret{
+	from, to {border-color:  transparent}
+	50% {border-color:  orange}
+}
+
+p, li, a{
+	color: #4D3024;
+	font-family: "Special Elite", display;
+}
+
+img{
+	border-color: #B58D6E;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10%;
+}
+
+.center{
+	display:  block;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
